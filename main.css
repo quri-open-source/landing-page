@@ -216,3 +216,144 @@ body {
     width: 24px;
     height: 24px;
 }
+
+/* Container */
+.intro-section {
+  max-width: 1280px;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+/* Title spans full width */
+.intro-section h1 {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: #000;
+  margin: 0 auto 3rem auto;
+  grid-column: 1 / -1;
+}
+
+/* h2 subtitles */
+.intro-section h2 {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  text-align: left;
+}
+
+/* Section blocks use their own internal grid */
+.intro-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  grid-column: 1 / -1;
+}
+
+/* Section */
+.intro-section .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content wrapper */
+.intro-section .section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.5rem;
+  width: 100%;
+}
+
+/* Paragraphs */
+.intro-section .section p,
+.intro-section .section .content p {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Images */
+.intro-section .section img {
+  width: 100%;
+  max-width: 475px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Button wrapper */
+.intro-section__button-wrapper {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+  
+  /* Button styling */
+  .intro-section__button {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .intro-section__button:hover {
+    background-color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-section {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .intro-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .intro-section .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-section .container:nth-of-type(2) {
+    direction: ltr;
+  }
+
+  .intro-section .section .content {
+    padding: 0 1rem;
+  }
+}
