@@ -410,8 +410,22 @@ body {
 .sub-section-who-are-we {
   max-width: 600px; /* Limita el ancho del texto */
   text-align: left; /* Alinea el texto a la izquierda */
+  /*margin: 0 auto; /* Centra el bloque dentro del contenedor */
 }
 
+.sub-section-who-are-we p {
+  
+  margin: 0 50px; /* Centra el bloque dentro del contenedor */
+}
+
+.sub-section-who-are-we h2 {
+  text-align: center; 
+  font-size: 2rem; /* Aumenta el tamaño del texto del encabezado */
+  font-weight: 700; /* Hace el texto más grueso */
+  margin-bottom: 15px; /* Agrega espacio debajo del encabezado */
+}
+
+/*image about*/
 .image-about-container {
   display: flex; /* Organiza los elementos en una fila */
   justify-content: center; /* Centra las imágenes horizontalmente */
@@ -424,8 +438,37 @@ body {
   max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
   height: auto; /* Mantiene la proporción de las imágenes */
   flex: 1; /* Permite que las imágenes ocupen el mismo espacio */
-  max-width: 400px; /* Limita el tamaño máximo de las imágenes */
+  max-width: 450px; /* Limita el tamaño máximo de las imágenes */
   border-radius: 15px
+}
+
+.our-story-container {
+  display: flex; /* Organiza los elementos en una fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 20px; /* Espaciado entre los elementos */
+  padding: 10px; /* Espaciado interno */ 
+  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+  margin: 0, auto; /* Espaciado externo */   
+}
+
+.our-story {
+  flex: 1; /* Permite que los elementos ocupen el mismo espacio */
+  max-width: 450px; /* Limita el ancho máximo de cada sección */
+  margin: 0 0; /* Centra el bloque dentro del contenedor */
+ 
+}
+.our-story-container h2 {
+  text-align: center; /* Centra el texto del encabezado */
+  font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
+  margin-bottom: 15px; /* Agrega espacio debajo del encabezado */
+}
+
+.divider-our {
+  width: 1px;
+  height: 250px; 
+  background-color: black;
+  margin: auto 20px;
 }
 
 /*footer container*/
