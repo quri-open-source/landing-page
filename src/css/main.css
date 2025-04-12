@@ -193,6 +193,7 @@ body {
   .join-text strong {
     font-weight: 700;
   }
+  
 
 .hero-container {
     max-width: 1280px;
@@ -410,3 +411,97 @@ body {
   max-width: 600px; /* Limita el ancho del texto */
   text-align: left; /* Alinea el texto a la izquierda */
 }
+.footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-container h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-column1,
+.footer-column2,
+.footer-column3 {
+  flex: 1 1 0;
+  min-width: 200px;
+}
+
+.footer-logo {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.footer-column2-subheading {
+  margin-top: 2rem;
+}
+
+.footer-quri-white-logo {
+  width: 97px;
+  height: 32px;
+}
+
+.footer-container p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+.footer-column1 p {
+  color: #ccc;
+  font-size: 0.7rem;
+}
+
+.footer-container p {
+  transition: all 0.2s ease;
+}
+.footer-container p:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-container p.no-pointer {
+  cursor: default;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer-container p.no-pointer:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
