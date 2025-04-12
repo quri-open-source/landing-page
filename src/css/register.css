@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .register-container {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .register-box .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon-shirt {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .back-button {
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .back-button svg {
+    stroke: #000;
+    transition: transform 0.2s ease;
+  }
+  
+  .back-button:hover svg {
+    transform: translateX(-4px);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .checkbox-group {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-weight: normal;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-top: 2px;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .checkbox-group a {
+    color: #007aff;
+    text-decoration: none;
+  }
+  
+  .register-btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .register-container {
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .icon-shirt {
+      width: 48px;
+      height: 48px;
+    }
+  
+    .header h1 {
+      font-size: 22px;
+    }
+  }
+  
