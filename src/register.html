@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../src/css/register.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Kumbh+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <title>Register</title>
+</head>
+<body>
+
+  <div class="register-container">
+    <div class="register-box">
+
+      <!-- Botón de regreso al hub -->
+      <a href="index.html" class="back-button" aria-label="Go back to hub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-arrow-left">
+          <path d="m12 19-7-7 7-7" />
+          <path d="M19 12H5" />
+        </svg>
+      </a>
+
+      <div class="header">
+        <h1>Register</h1>
+        <img src="../public/assets/login-quri-tshirt.png" alt="T-Shirt Icon" class="icon-shirt" />
+      </div>
+
+      <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="secondName">Second Name:</label>
+        <input type="text" id="secondName" name="secondName" />
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" required />
+            I accept <a href="#">Terms and Conditions</a>
+          </label>
+        </div>
+
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" />
+            I want to receive special offers, new drops, and early access to exclusive designs.
+          </label>
+        </div>
+
+        <button type="submit" class="register-btn btn-animated">Register</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
