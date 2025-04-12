@@ -1,0 +1,93 @@
+.faq-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.faq-section {
+  max-width: 1280px;
+  width: 100%;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #111;
+}
+
+.faq-section h2 {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.faq-section .faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-section .faq-question {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  gap: 1rem;
+}
+
+.faq-section .dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.faq-section .faq-question:hover {
+  color: inherit;
+}
+
+.faq-section .question-text {
+  flex-grow: 1;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.faq-section .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.faq-section .faq-item.open .arrow {
+  transform: rotate(180deg);
+}
+
+.faq-section .arrow svg {
+  width: 23px;
+  height: 22px;
+  stroke: black;
+}
+
+.faq-section .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 0.95rem;
+  padding-left: 1.50rem;
+  color: #333;
+}
+
+.faq-section .faq-item.open .faq-answer {
+  max-height: 300px;
+}
+
+.faq-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.faq-section a:hover {
+  text-decoration: underline;
+}
