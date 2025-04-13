@@ -8,9 +8,10 @@
     font-family: 'Kumbh Sans', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     padding: 20px;
+    position: relative;
   }
   
   .register-container {
@@ -35,7 +36,6 @@
   }
   
   .back-button {
-    margin-bottom: 15px;
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
