@@ -42,8 +42,9 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 4px;
-    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     color: #000;
   }
   
