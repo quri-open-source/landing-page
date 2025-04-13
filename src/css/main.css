@@ -26,10 +26,23 @@
 }
 .divider {
     width: 1px;
-    height: 120px; 
+    height: 160px; 
     background-color: black;
-    margin: auto 20px;
+  
 }
+.sub-section h2 {
+  margin-bottom: 15px; 
+}
+
+.sub-section p {
+  margin-bottom: 10px; 
+}
+
+.sub-section .small-text {
+  margin-top: 15px; 
+  margin-bottom: 70px; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -392,76 +405,76 @@ body {
 
 /* About Section */
 .who-are-we-container {
-  display: flex; /* Activa flexbox para alinear imagen y texto */
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  gap: 20px; /* Espaciado entre la imagen y el texto */
-  height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
-  max-height: 100vh; /* Evita que supere la altura de la ventana */  
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  gap: 20px; 
+  height: 100vh; 
+  max-height: 100vh;
+  margin: 0 50px;
 }
 
 
 .sub-sections-who-are-we img {
-  max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 10px; /* Opcional: redondea las esquinas de la imagen */
+  max-width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
 }
 
 .sub-section-who-are-we {
-  max-width: 600px; /* Limita el ancho del texto */
-  text-align: left; /* Alinea el texto a la izquierda */
-  /*margin: 0 auto; /* Centra el bloque dentro del contenedor */
+  max-width: 600px; 
+  text-align: left; 
+  
 }
 
-.sub-section-who-are-we p {
-  
-  margin: 0 50px; /* Centra el bloque dentro del contenedor */
+.sub-section-who-are-we p {  
+  margin: 0 50px; 
 }
 
 .sub-section-who-are-we h2 {
   text-align: center; 
-  font-size: 2rem; /* Aumenta el tamaño del texto del encabezado */
-  font-weight: 700; /* Hace el texto más grueso */
-  margin-bottom: 15px; /* Agrega espacio debajo del encabezado */
+  font-size: 2rem; 
+  font-weight: 700;
+  margin-bottom: 15px; 
 }
 
 /*image about*/
 .image-about-container {
-  display: flex; /* Organiza los elementos en una fila */
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  align-items: center; /* Alinea las imágenes verticalmente */
-  gap: 70px; /* Espaciado entre las imágenes */
-  padding: 20px; /* Espaciado interno */
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  gap: 70px; 
+  padding: 20px; 
 }
 
 .image-about img {
-  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de las imágenes */
-  flex: 1; /* Permite que las imágenes ocupen el mismo espacio */
-  max-width: 450px; /* Limita el tamaño máximo de las imágenes */
+  max-width: 100%; 
+  height: auto; 
+  flex: 1; 
+  max-width: 450px; 
   border-radius: 15px
 }
 
 .our-story-container {
-  display: flex; /* Organiza los elementos en una fila */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
-  gap: 20px; /* Espaciado entre los elementos */
-  padding: 10px; /* Espaciado interno */ 
-  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
-  margin: 0, auto; /* Espaciado externo */   
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  margin: 0, auto;  
 }
 
 .our-story {
-  flex: 1; /* Permite que los elementos ocupen el mismo espacio */
-  max-width: 450px; /* Limita el ancho máximo de cada sección */
-  margin: 0 0; /* Centra el bloque dentro del contenedor */
+  flex: 1; 
+  max-width: 450px; 
+  margin: 0 0; 
  
 }
 .our-story-container h2 {
-  text-align: center; /* Centra el texto del encabezado */
-  font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
-  margin-bottom: 15px; /* Agrega espacio debajo del encabezado */
+  text-align: center; 
+  font-size: 2rem; 
+  margin-bottom: 15px; 
 }
 
 .divider-our {
@@ -470,6 +483,80 @@ body {
   background-color: black;
   margin: auto 20px;
 }
+.why-it-matters-container {
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  gap: 20px; 
+  height: 50vh; 
+  max-height: 100vh; 
+}
+.why-it-matters{
+  max-width: 600px;
+  text-align: left; 
+}
+.why-it-matters h2{
+  text-align: center; 
+  font-size: 2rem; 
+  margin-bottom: 15px; 
+}
+/* General responsive adjustments */
+@media (max-width: 768px) {
+  .who-are-we-container,
+  .image-about-container,
+  .our-story-container,
+  .why-it-matters-container {
+    flex-direction: column; 
+    gap: 30px; 
+    padding: 20px; 
+  }
+
+  .sub-sections-who-are-we img,
+  .image-about img,
+  .our-story,
+  .why-it-matters {
+    max-width: 100%; 
+    text-align: center; 
+  }
+
+  .sub-section-who-are-we p,
+  .why-it-matters p {
+    margin: 0 20px; 
+  }
+
+  .divider-our {
+    height: 1px; 
+    width: 80%; 
+    margin: 20px auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  .who-are-we-container,
+  .image-about-container,
+  .our-story-container,
+  .why-it-matters-container {
+    padding: 10px; 
+  }
+
+  .sub-section-who-are-we h2,
+  .our-story-container h2,
+  .why-it-matters h2 {
+    font-size: 1.5rem; 
+  }
+
+  .sub-section-who-are-we p,
+  .why-it-matters p {
+    font-size: 0.9rem; 
+    line-height: 1.5; 
+  }
+
+  .divider-our {
+    width: 60%; 
+  }
+}
+
+
 
 /*footer container*/
 .footer {
