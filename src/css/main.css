@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra los elementos hijos horizontalmente */
-    text-align: center; 
+    text-align: center;
 
 }
 .sub-sections {
@@ -56,24 +56,24 @@ body {
     z-index: 1000;
   }
 
-  .header-container { 
+  .header-container {
     width: 100%;
     max-width: 1200px;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
   }
-  
+
   .logo {
     flex: 1;
   }
-  
+
   .nav {
     flex: 2;
     display: flex;
     justify-content: center;
   }
-  
+
   .auth {
     flex: 1;
     display: flex;
@@ -81,26 +81,26 @@ body {
     align-items: center;
     gap: 1rem;
   }
-  
+
   .logo {
     font-weight: 700;
     font-size: 1.5rem;
     color: #000000;
   }
-  
+
   .nav-list {
     list-style: none;
     display: flex;
     gap: 1.5rem;
   }
-  
+
   .nav-list li a {
     text-decoration: none;
     color: #000000;
     font-weight: 500;
     transition: all 0.3s ease;
   }
-  
+
   .nav-list li a:hover {
     color: #000000;
     font-weight: bold;
@@ -116,7 +116,7 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease;
   }
-  
+
   .cta-button {
     background-color: #000000;
     color: #ffffff;
@@ -126,11 +126,11 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease;
   }
-  
+
   .cta-button:hover {
     background-color: #000000;
   }
-  
+
   .menu-toggle {
     display: none;
     font-size: 1.8rem;
@@ -139,7 +139,7 @@ body {
     cursor: pointer;
     color: #333;
   }
-  
+
   /* Responsive */
   @media (max-width: 768px) {
     .nav-list {
@@ -154,15 +154,15 @@ body {
       padding: 1rem 0;
       display: none;
     }
-  
+
     .nav-list.active {
       display: flex;
     }
-  
+
     .menu-toggle {
       display: block;
     }
-  
+
     .cta-button {
       display: none;
     }
@@ -179,23 +179,23 @@ body {
     width: auto;
     display: block;
   }
-  
+
   .auth {
     display: flex;
     align-items: center;
     gap: 1rem;
   }
-  
+
   .join-text {
     font-size: 1rem;
     color: #000;
     font-weight: 400;
   }
-  
+
   .join-text strong {
     font-weight: 700;
   }
-  
+
 
 .hero-container {
     max-width: 1280px;
@@ -343,7 +343,7 @@ body {
     justify-content: center;
     margin-top: 2rem;
 }
-  
+
   /* Button styling */
   .intro-section__button {
     font-family: 'Kumbh Sans', sans-serif;
@@ -357,7 +357,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .intro-section__button:hover {
     background-color: #222;
 }
@@ -407,19 +407,20 @@ body {
 
 .footer-container-info {
   display: flex;
-  flex: 0 0 100%;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  gap: 0rem clamp(5rem, 17vw, 20rem);
+  max-width: 1280px;
+  width: 100%;
 }
 
 .sub-footer-container-legal {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
   padding-top: 2rem;
-  gap: 0rem clamp(5rem, 17vw, 20rem);
   margin: 0 auto;
 }
 
@@ -433,9 +434,8 @@ body {
 
 .right-bottom-container-legal {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .left-bottom-container-legal-title {
@@ -447,6 +447,12 @@ body {
   font-size: 14px;
   color: #dfdfdf;
   padding-bottom: 1rem;
+}
+
+.sub-footer-container-legal {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .sub-footer-container-legal p {
@@ -486,32 +492,32 @@ body {
   color: #dfdfdf
 }
 
+.legal-links{
+    display: flex;
+    gap: 20px;
+}
+
 .link-sign-in {
-  color: #1689F4; 
-  text-decoration: none; 
+  color: #1689F4;
+  text-decoration: none;
 }
 
 .link-sign-in:hover {
-  color: #1689F4; 
-  text-decoration: underline; 
-  font-weight: bold; 
-
-}
-
-.privacy-policy {
-  margin-right: 20px; 
+  color: #1689F4;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .terms-of-service {
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .privacy-policy:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .terms-of-service:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
   cursor: pointer;
 }
