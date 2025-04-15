@@ -196,17 +196,7 @@ body {
 
 
 .hero-container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-container {
-    width: 100%;
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
+  overflow: hidden;
 }
 
 .carousel-track {
