@@ -1,4 +1,3 @@
-
 .about-us-container {
     margin: 0 auto;
     width: 100%;
@@ -196,17 +195,7 @@ body {
 
 
 .hero-container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-container {
-    width: 100%;
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
+  overflow: hidden;
 }
 
 .carousel-track {
@@ -582,6 +571,89 @@ body {
   color: #1689F4;
   text-decoration: none;
 }
+
+/* --------Pricing Section */
+
+.pricing-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 10rem 0;
+}
+
+.pricing-title {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 36px;
+  color: #000;
+  margin: 5rem 0;
+  text-align: left;
+}
+
+/* Accesible By Design Container */
+.accessible-by-design-container {
+  display: flex;
+  align-items: center;
+  margin: 0 0 3rem 0;
+}
+
+.sub-section-accessible-by-design-img img{
+  max-width: 400px; 
+  height: auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sub-section-accessible-by-design {
+  max-width: 600px; 
+  margin: 0 70px;
+}
+
+.sub-section-accessible-by-design h2 {
+  text-align: left;
+  font-family: 'Istok Web', sans-serif; 
+  font-size: 24px;
+  margin: 0 0 70px 0;
+} 
+
+.sub-section-accessible-by-design p {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  max-width: 400px; 
+  text-align: justify;
+}
+
+/* Only Pay When It Matters Container */
+
+.only-pay-when-it-matters-container {
+  display: flex;
+  align-items: center;
+}
+
+.sub-section-only-pay-when-it-matters-img img {
+  max-width: 400px; 
+  height: auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sub-section-only-pay-when-it-matters {
+  max-width: 600px; 
+  margin: 0 70px;
+}
+
+.sub-section-only-pay-when-it-matters h2 {
+  font-family: 'Istok Web', sans-serif; 
+  text-align: justify;
+  margin: 0 0 70px 0;
+}
+
+.sub-section-only-pay-when-it-matters p {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  max-width: 400px; 
+  text-align: justify;
+}
+
 
 .link-sign-in:hover {
   color: #1689F4;

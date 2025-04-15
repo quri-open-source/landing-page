@@ -7,9 +7,10 @@
             href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Kumbh+Sans:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <script src="./js/carousel.js" defer></script>
-        <script src="./js/header.js" defer></script>
-        <link rel="stylesheet" href="./css/main.css" />
+        <script src="src/js/carousel.js" defer></script>
+        <script src="src/js/header.js" defer></script>
+        <link rel="stylesheet" href="src/css/main.css" />
+        <link rel="stylesheet" href="src/css/carousel.css" />
         <title>Quri</title>
     </head>
 
@@ -18,20 +19,25 @@
             <div class="header-container">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="../public/assets/header-quri-logo.png" alt="QURI Logo" class="logo-img" />
+                        <img
+                            src="../public/assets/header-quri-logo.png"
+                            alt="QURI Logo"
+                            class="logo-img"
+                        />
                     </a>
                 </div>
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="#">Create</a></li>
                         <li><a href="#">Explore</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Pricing</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </nav>
 
                 <div class="auth">
-                    <a href="register.html" class="join-text">Join <strong>QURI</strong></a>
+                    <a href="register.html" class="join-text"
+                        >Join <strong>QURI</strong></a
+                    >
                     <a href="login.html" class="cta-button">LOGIN</a>
                 </div>
 
@@ -43,55 +49,31 @@
 
         <section class="hero-container">
             <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="card">
-                        <img src="../public/assets/Models 1.png" alt="" />
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img
+                            src="../public/assets/carousel-1.png"
+                            class="carousel-slide"
+                        />
+                        <img
+                            src="../public/assets/carousel-2.png"
+                            class="carousel-slide"
+                        />
+                        <img
+                            src="../public/assets/carousel-3.png"
+                            class="carousel-slide"
+                        />
+                        <img
+                            src="../public/assets/carousel-4.png"
+                            class="carousel-slide"
+                        />
+                        <img
+                            src="../public/assets/carousel-5.png"
+                            class="carousel-slide"
+                        />
                     </div>
-                    <div class="card">
-                        <img src="../public/assets/Models 2.png" alt="" />
-                    </div>
-                    <div class="card">
-                        <img src="../public/assets/Models 3.png" alt="" />
-                    </div>
-                    <div class="card">
-                        <img src="./public/assets/Models 4.png" alt="" />
-                    </div>
-                </div>
-                <div class="carousel-nav">
-                    <button id="prev">
-                        <svg
-                            width="43"
-                            height="44"
-                            viewBox="0 0 43 44"
-                            class="icon"
-                            fill="none"
-                        >
-                            <path
-                                d="M5.375 22L14.3333 31.1666M5.375 22L14.3333 12.8333M5.375 22H37.625"
-                                stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
-                    </button>
-                    <button id="next">
-                        <svg
-                            width="43"
-                            height="44"
-                            viewBox="0 0 43 44"
-                            class="icon"
-                            fill="none"
-                        >
-                            <path
-                                d="M37.625 22L28.6667 31.1666M37.625 22L28.6667 12.8333M37.625 22H5.375"
-                                stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
-                    </button>
+                    <button class="carousel-button prev">&#10094;</button>
+                    <button class="carousel-button next">&#10095;</button>
                 </div>
             </div>
         </section>
@@ -201,16 +183,32 @@
                     </div>
                     <div class="sub-footer-container-social-media">
                         <h1>Social Media</h1>
-                        <img src="../public/assets/footer-ig-icon.png" alt="Instagram" />
-                        <img src="../public/assets/footer-x-icon.png" alt="X(Twitter)" />
-                        <img src="../public/assets/footer-fb-icon.png" alt="Facebook" />
-                        <img src="../public/assets/footer-tiktok-icon.png" alt="Tiktok" />
+                        <img
+                            src="../public/assets/footer-ig-icon.png"
+                            alt="Instagram"
+                        />
+                        <img
+                            src="../public/assets/footer-x-icon.png"
+                            alt="X(Twitter)"
+                        />
+                        <img
+                            src="../public/assets/footer-fb-icon.png"
+                            alt="Facebook"
+                        />
+                        <img
+                            src="../public/assets/footer-tiktok-icon.png"
+                            alt="Tiktok"
+                        />
                     </div>
                 </section>
                 <div class="sub-footer-container-legal">
                     <div class="left-bottom-container-legal">
                         <h1 class="left-bottom-container-legal-title">QURI</h1>
-                        <p>Your creative space is waiting. <a class="link-sign-in" href="#">Sign in</a> in to get started</p>
+                        <p>
+                            Your creative space is waiting.
+                            <a class="link-sign-in" href="#">Sign in</a> in to
+                            get started
+                        </p>
                     </div>
                     <div class="right-bottom-container-legal">
                         <p class="left-bottom-container-location">LIMA, PE</p>
