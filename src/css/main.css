@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 50px 0;
 }
 
 .sub-section {
@@ -152,6 +153,12 @@ body {
       display: none;
     }
 
+    .footer-container-info {
+      flex-direction: column;
+    }
+    .right-bottom-container-legal {
+      flex-direction: column;
+    }
     .nav-list.active {
       display: flex;
     }
@@ -306,7 +313,6 @@ body {
   font-size: 1rem;
   color: #333;
   line-height: 1.7;
-  text-align: justify;
   margin: 0 auto;
   width: 100%;
 }
