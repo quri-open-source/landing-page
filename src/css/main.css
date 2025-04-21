@@ -396,6 +396,23 @@ body {
       margin: 0;
      }
   }
+
+  .who-are-we-container {
+    flex-direction: column;
+  }
+
+  .image-about-container {
+    flex-direction: column;
+  }
+  .our-story-container {
+    flex-direction: column;
+
+    .divider-our {
+      width: 100%;
+      height: 1px;
+      margin: 0;
+    }
+  }
 }
 
 /* About Section */
