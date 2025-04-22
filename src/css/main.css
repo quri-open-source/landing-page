@@ -511,7 +511,16 @@ body {
 /* Footer */
 .footer {
     background-color: #000;
-    color: #fff
+    color: #fff;
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+    }
+    & a:hover {
+      color: #1689F4;
+      text-decoration: underline;
+    }
 }
 
 .footer-container {
