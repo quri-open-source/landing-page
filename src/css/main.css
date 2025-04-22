@@ -421,7 +421,7 @@ body {
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
   gap: 20px; /* Espaciado entre la imagen y el texto */
-  height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+  padding: 100px 0;
   max-height: 100vh; /* Evita que supere la altura de la ventana */  
 }
 
@@ -454,9 +454,12 @@ body {
 .image-about-container {
   display: flex; /* Organiza los elementos en una fila */
   justify-content: center; /* Centra las imágenes horizontalmente */
+  justify-content: space-between; /* Espacio entre las imágenes */
+  width: 100%;
   align-items: center; /* Alinea las imágenes verticalmente */
-  gap: 70px; /* Espaciado entre las imágenes */
-  padding: 20px; /* Espaciado interno */
+  padding: 0 16px; /* Espaciado interno */
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .image-about img {
@@ -470,18 +473,22 @@ body {
 .our-story-container {
   display: flex; /* Organiza los elementos en una fila */
   justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
   gap: 20px; /* Espaciado entre los elementos */
-  padding: 10px; /* Espaciado interno */ 
+  padding: 10px 10px 50px 10px; /* Espaciado interno */ 
   box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
-  margin: 0, auto; /* Espaciado externo */   
+  margin: 0, auto; /* Espaciado externo */  
 }
 
 .our-story {
   flex: 1; /* Permite que los elementos ocupen el mismo espacio */
   max-width: 450px; /* Limita el ancho máximo de cada sección */
   margin: 0 0; /* Centra el bloque dentro del contenedor */
- 
+  & > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
 }
 .our-story-container h2 {
   text-align: center; /* Centra el texto del encabezado */
