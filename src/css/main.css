@@ -406,6 +406,7 @@ body {
   }
   .our-story-container {
     flex-direction: column;
+    align-items: center;
 
     .divider-our {
       width: 100%;
