@@ -654,10 +654,12 @@ body {
 .footer-container {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
+
 
 .footer-container-info {
   display: flex;
@@ -703,11 +705,13 @@ body {
   padding-bottom: 1rem;
 }
 
+.footer-container-info,
 .sub-footer-container-legal {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
+
 
 .sub-footer-container-legal p {
   font-size: 12px;
