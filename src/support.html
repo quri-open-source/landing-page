@@ -9,157 +9,241 @@
     />
     <script src="./js/faq-section.js" defer></script>
     <link rel="stylesheet" href="./css/support.css" />
-    <title>Quri</title>
+    <title>Quri | Support</title>
   </head>
 
   <body>
-    <section class="faq-container">
+    <section class="faq-container" aria-labelledby="faq-heading">
       <div class="faq-section">
-        <h2>Frequently Asked Questions</h2>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
 
         <div class="faq-item">
-          <button class="faq-question">
-            <span class="dot">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq1-answer"
+            aria-label="Expand answer for: Do I need to pay to create designs?"
+          >
+            <span class="dot" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
             <span class="question-text">Do I need to pay to create designs?</span>
-            <span class="arrow">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="arrow" aria-hidden="true">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2084 8.25L11.5001 14.6667L4.79175 8.25"
                       stroke="black" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div
+            id="faq1-answer"
+            class="faq-answer"
+            role="region"
+            aria-hidden="true"
+          >
             <p>Nope. Creating and uploading designs is completely free. You only earn (and we only take a small cut) when a product sells.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
-            <span class="dot">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq2-answer"
+            aria-label="Expand answer for: Can I customize T-shirts without uploading my own art?"
+          >
+            <span class="dot" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
             <span class="question-text">Can I customize T-shirts without uploading my own art?</span>
-            <span class="arrow">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="arrow" aria-hidden="true">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2084 8.25L11.5001 14.6667L4.79175 8.25"
                       stroke="black" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div
+            id="faq2-answer"
+            class="faq-answer"
+            role="region"
+            aria-hidden="true"
+          >
             <p>Yes! You can use our design tools, templates, and elements to create your tee without needing any external files.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
-            <span class="dot">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq3-answer"
+            aria-label="Expand answer for: How do I sell my T-shirts?"
+          >
+            <span class="dot" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
             <span class="question-text">How do I sell my T-shirts?</span>
-            <span class="arrow">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="arrow" aria-hidden="true">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2084 8.25L11.5001 14.6667L4.79175 8.25"
                       stroke="black" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div
+            id="faq3-answer"
+            class="faq-answer"
+            role="region"
+            aria-hidden="true"
+          >
             <p>Just create an account, upload your design, set your price, and publish. We take care of printing, shipping, and customer support.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
-            <span class="dot">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq4-answer"
+            aria-label="Expand answer for: Can I remove or update a design after publishing it?"
+          >
+            <span class="dot" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
             <span class="question-text">Can I remove or update a design after publishing it?</span>
-            <span class="arrow">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="arrow" aria-hidden="true">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2084 8.25L11.5001 14.6667L4.79175 8.25"
                       stroke="black" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div
+            id="faq4-answer"
+            class="faq-answer"
+            role="region"
+            aria-hidden="true"
+          >
             <p>Yes. You can edit, pause, or delete your designs anytime from your dashboard.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
-            <span class="dot">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq5-answer"
+            aria-label="Expand answer for: Can I use the designs for other products?"
+          >
+            <span class="dot" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
             <span class="question-text">Can I use the designs for other products?</span>
-            <span class="arrow">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="arrow" aria-hidden="true">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2084 8.25L11.5001 14.6667L4.79175 8.25"
                       stroke="black" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div
+            id="faq5-answer"
+            class="faq-answer"
+            role="region"
+            aria-hidden="true"
+          >
             <p>Right now we focus on T-shirts, but designs belong to their creators. If you're interested in other products or collaborations, feel free to reach out directly to the artist (if available).</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
-            <span class="dot">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq6-answer"
+            aria-label="Expand answer for: How often are new designs added?"
+          >
+            <span class="dot" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
             <span class="question-text">How often are new designs added?</span>
-            <span class="arrow">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="arrow" aria-hidden="true">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2084 8.25L11.5001 14.6667L4.79175 8.25"
                       stroke="black" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div
+            id="faq6-answer"
+            class="faq-answer"
+            role="region"
+            aria-hidden="true"
+          >
             <p>All the time. Designers from everywhere contribute regularly — so there’s always something new to discover.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
-            <span class="dot">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq7-answer"
+            aria-label="Expand answer for: I'm a manufacturer. How do I partner with you?"
+          >
+            <span class="dot" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
             <span class="question-text">I'm a manufacturer. How do I partner with you?</span>
-            <span class="arrow">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="arrow" aria-hidden="true">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2084 8.25L11.5001 14.6667L4.79175 8.25"
                       stroke="black" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div
+            id="faq7-answer"
+            class="faq-answer"
+            role="region"
+            aria-hidden="true"
+          >
             <p>We’re always open to new partners. Reach out via our contact form or email us at <a href="mailto:businessinquiries@quri.com">businessinquiries@quri.com</a> to get started.</p>
           </div>
         </div>
