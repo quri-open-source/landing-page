@@ -119,7 +119,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     padding: 0.6rem 1.2rem;
-    border-radius: 25px;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -192,9 +192,23 @@ body {
 
   .join-text {
     font-size: 1rem;
-    color: #000;
-    font-weight: 400;
+    font-weight: 500;
+    color: #000000;
+    padding: 0.6rem 1.2rem;
+    border: 1.5px solid #000000;
+    border-radius: 12px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-family: 'Kumbh Sans', sans-serif;
   }
+  
+  .join-text:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
 
   .join-text strong {
     font-weight: 700;
