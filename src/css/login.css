@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
+
+  
   
   body {
     font-family: 'Kumbh Sans', sans-serif;
@@ -133,7 +137,6 @@
   }
   
   .back-button svg {
-    stroke: #000;
     transition: transform 0.2s ease;
   }
   
@@ -141,3 +144,11 @@
     transform: translateX(-4px);
   }
   
+
+  body {
+    background-image: url('../../public/assets/login-form-image.png');
+    background-size: cover;       /* Asegura que cubra todo el fondo */
+    background-position: center;  /* Centrado */
+    background-repeat: no-repeat; /* No se repite */
+    background-attachment: fixed; /* Opcional: efecto parallax */
+  }
