@@ -4,7 +4,6 @@ const es = {
     "pricing": "Precios",
     "join": "Únete",
     "login": "Iniciar sesión",
-    "language-selector": "Seleccionar idioma",
     "lang-en": "EN",
     "lang-es": "ES",
     "faq-heading": "Preguntas Frecuentes",

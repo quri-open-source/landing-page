@@ -4,7 +4,6 @@ const en = {
     "pricing": "Pricing",
     "join": "Join",
     "login": "Login",
-    "language-selector": "Select language",
     "lang-en": "EN",
     "lang-es": "ES",
     "faq-heading": "Frequently Asked Questions",
