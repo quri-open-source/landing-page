@@ -1,251 +1,214 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="description" content="QURI es tu plataforma para diseñar, vender y descubrir camisetas únicas creadas por artistas independientes. Exprésate con estilo.">
-        <meta name="keywords" content="camisetas personalizadas, diseño de camisetas, artistas independientes, moda original, QURI, marketplace creativo">
-        <meta name="author" content="QURI Team">
+    <meta
+      name="description"
+      content="QURI es tu plataforma para diseñar, vender y descubrir camisetas únicas creadas por artistas independientes. Exprésate con estilo."
+      i18n-content="description"
+    />
+    <meta
+      name="keywords"
+      content="camisetas personalizadas, diseño de camisetas, artistas independientes, moda original, QURI, marketplace creativo"
+      i18n-content="keywords"
+    />
+    <meta name="author" content="QURI Team" i18n-content="author" />
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Kumbh+Sans:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <script src="src/js/carousel.js" defer></script>
-        <script src="src/js/header.js" defer></script>
-        <link rel="stylesheet" href="src/css/main.css" />
-        <link rel="stylesheet" href="src/css/carousel.css" />
-        <title>Quri</title>
-    </head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Kumbh+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="src/js/carousel.js" defer></script>
+    <script src="src/js/header.js" defer></script>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/carousel.css" />
+ 
+    <title i18n="title">Quri</title>
+  </head>
 
-    <body>
-        <header class="header">
-            <div class="header-container">
-                <div class="logo">
-                    <a href="index.html" aria-label="Go to homepage">
-                        <img
-                            src="../public/assets/header-quri-logo.png"
-                            alt="QURI Logo"
-                            class="logo-img"
-                        />
-                    </a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                      <li><a href="src/support.html">FAQ</a></li>
-                      <li><a href="src/about.html">About</a></li>
-                      <li><a href="src/pricing.html">Pricing</a></li>
-                  
-                      <!-- NUEVOS BOTONES SOLO VISIBLES EN MÓVIL -->
-                      <li class="mobile-auth">
-                        <a href="register.html" class="join-text"><strong>Join</strong></a>
-                      </li>
-                      <li class="mobile-auth">
-                        <a href="login.html" class="cta-button">Login</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html" aria-label="Go to homepage">
+            <img
+              src="../public/assets/header-quri-logo.png"
+              alt="QURI Logo"
+              class="logo-img"
+              i18n-alt="logo"
+            />
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="src/support.html" i18n="faq">FAQ</a></li>
+            <li><a href="src/about.html" i18n="about">About</a></li>
+            <li><a href="src/pricing.html" i18n="pricing">Pricing</a></li>
+            <li class="mobile-auth">
+              <a href="register.html" class="join-text" i18n="join"><strong>Join</strong></a>
+            </li>
+            <li class="mobile-auth">
+              <a href="login.html" class="cta-button" i18n="login">Login</a>
+            </li>
+          </ul>
+        </nav>
 
-                <div class="auth">
-                    <a href="src/register.html" class="join-text" aria-label="Join QURI platform"
-                        ><strong>JOIN</strong></a
-                    >
-                    <a href="src/login.html" class="cta-button" aria-label="Login to QURI">LOGIN</a>
-                </div>
-
-                <button class="menu-toggle" aria-label="Open menu">
-                    &#9776;
+        <div class="auth">
+            <div class="custom-dropdown" id="language-dropdown">
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select language" i18n="language-selector">
+                  🌐 EN
                 </button>
-            </div>
-        </header>
+                <ul class="dropdown-menu" role="menu">
+                  <li><button class="dropdown-item lang-btn" data-lang="en" i18n="lang-en">EN</button></li>
+                  <li><button class="dropdown-item lang-btn" data-lang="es" i18n="lang-es">ES</button></li>
+                </ul>
+              </div>
+              
+          <a href="src/register.html" class="join-text" aria-label="Join QURI platform" i18n="join-text"><strong>JOIN</strong></a>
+          <a href="src/login.html" class="cta-button" aria-label="Login to QURI" i18n="login-text">LOGIN</a>
+        </div>
 
-        <section class="hero-container">
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img
-                            src="../public/assets/carousel-1.png"
-                            class="carousel-slide"
-                            alt="T-shirt design slide 1"
-                        />
-                        <img
-                            src="../public/assets/carousel-2.png"
-                            class="carousel-slide"
-                            alt="T-shirt design slide 2"
-                        />
-                        <img
-                            src="../public/assets/carousel-3.png"
-                            class="carousel-slide"
-                            alt="T-shirt design slide 3"
-                        />
-                        <img
-                            src="../public/assets/carousel-4.png"
-                            class="carousel-slide"
-                            alt="T-shirt design slide 4"
-                        />
-                        <img
-                            src="../public/assets/carousel-5.png"
-                            class="carousel-slide"
-                            alt="T-shirt design slide 5"
-                        />
-                    </div>
-                    <button class="carousel-button prev" aria-label="Previous slide">&#10094;</button>
-                    <button class="carousel-button next" aria-label="Next slide">&#10095;</button>
-                </div>
+        <button class="menu-toggle" aria-label="Open menu" i18n="menu-toggle">☰</button>
+      </div>
+    </header>
+
+    <section class="hero-container">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="../public/assets/carousel-1.png" class="carousel-slide" alt="T-shirt design slide 1" i18n-alt="carousel-1" />
+            <img src="../public/assets/carousel-2.png" class="carousel-slide" alt="T-shirt design slide 2" i18n-alt="carousel-2" />
+            <img src="../public/assets/carousel-3.png" class="carousel-slide" alt="T-shirt design slide 3" i18n-alt="carousel-3" />
+            <img src="../public/assets/carousel-4.png" class="carousel-slide" alt="T-shirt design slide 4" i18n-alt="carousel-4" />
+            <img src="../public/assets/carousel-5.png" class="carousel-slide" alt="T-shirt design slide 5" i18n-alt="carousel-5" />
+          </div>
+          <button class="carousel-button prev" aria-label="Previous slide" i18n="carousel-prev">❮</button>
+          <button class="carousel-button next" aria-label="Next slide" i18n="carousel-next">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <h1 i18n="heroTitle">Design it. Rock it.</h1>
+
+      <div class="container">
+        <div class="section">
+          <img src="../public/assets/intro-section-img1.png" alt="Editable T-shirt Design" i18n-alt="intro-section-img1" />
+        </div>
+        <div class="section">
+          <h2 i18n="introSectionTitle1">Bring your idea to life – effortlessly.</h2>
+          <div class="content">
+            <p i18n="introSectionText1">
+              Designing your own T-shirt should feel as exciting as wearing it — and with our intuitive editor, it is.
+              Upload your own illustrations, logos, or photos. Add custom text with dozens of fonts. Whether you're
+              making a gift, building a brand, or just trying out an idea, our platform adapts to your level — no
+              design background needed. And if you ever feel stuck, explore our library of templates and community
+              designs to get inspired and remix something fresh.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section">
+          <h2 i18n="introSectionTitle2">Support independent artists. Discover your next favorite tee.</h2>
+          <div class="content">
+            <p i18n="introSectionText2">
+              Tired of mass-produced fashion? Our marketplace is a curated space filled with designs made by real
+              people — not algorithms. Whether you're into retro vibes, anime, politics, streetwear, or abstract
+              design, there's something for you. And because designs are added every day, there's always something new
+              to discover. We don’t just print shirts, we bring ideas to life, one tee at a time.
+            </p>
+          </div>
+        </div>
+        <div class="section">
+          <img src="../public/assets/intro-section-img2.png" alt="Final T-shirt Preview" i18n-alt="intro-section-img2" />
+        </div>
+      </div>
+
+      <div class="intro-section__button-wrapper">
+        <button class="intro-section__button" aria-label="Start creating your design" i18n="startCreating">START CREATING</button>
+      </div>
+    </section>
+
+    <section class="about-us-container">
+      <div class="sub-sections">
+        <div class="sub-section">
+          <h2 i18n="whoAreWe">Who are we?</h2>
+          <p i18n="aboutUsText">
+            A platform where creativity meets clothing. We help people design, sell, and wear unique T-shirts —
+            effortlessly.
+          </p>
+          <p class="small-text">
+            <a href="src/about.html" aria-label="Learn more about QURI" i18n="learnMore">Learn more about us</a>
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="sub-section">
+          <h2 i18n="howMuchDoesItCost">How much does it cost?</h2>
+          <p i18n="costText">
+            It's free to get started.<br />
+            We only earn when you do. Manufacturers get custom rates.
+          </p>
+          <p class="small-text">
+            <a href="src/pricing.html" aria-label="Learn more about pricing and revenue model" i18n="learnMore">Learn more about Pricing</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <section class="footer-container">
+          <section class="footer-container-info">
+            <div class="sub-footer-container-home-community">
+              <h1 i18n="home">Home Page</h1>
+              <a href="src/about.html" aria-label="Visit our community page" i18n="community">Community</a>
             </div>
+            <div class="sub-footer-container-company">
+              <h1 i18n="company">Company</h1>
+              <a href="src/about.html" aria-label="About QURI" i18n="about_us">About us</a>
+            </div>
+            <div class="sub-footer-container-pricing">
+              <h1 i18n="pricing">Pricing</h1>
+              <a href="src/pricing.html" aria-label="How pricing works" i18n="how_it_works">How it works</a>
+            </div>
+            <div class="sub-footer-container-social-media">
+              <h1 i18n="socialMedia">Social Media</h1>
+              <img src="../public/assets/footer-ig-icon.png" alt="Instagram" aria-label="Instagram" i18n-alt />
+              <img src="../public/assets/footer-x-icon.png" alt="X (Twitter)" aria-label="Twitter" i18n-alt />
+              <img src="../public/assets/footer-fb-icon.png" alt="Facebook" aria-label="Facebook" i18n-alt />
+              <img src="../public/assets/footer-tiktok-icon.png" alt="TikTok" aria-label="TikTok" i18n-alt />
+            </div>
+          </section>
+          <div class="sub-footer-container-legal">
+            <div class="left-bottom-container-legal">
+              <h1 class="left-bottom-container-legal-title" i18n="quri">QURI</h1>
+              <p i18n="aboutUsText">
+                Your creative space is waiting.
+                <a class="link-sign-in" href="src/login.html" aria-label="Sign in to your QURI account" i18n="sign_in">Sign in</a>
+                to get started
+              </p>
+            </div>
+            <div class="right-bottom-container-legal">
+              <p class="left-bottom-container-location" i18n="location">LIMA, PE</p>
+      
+              <div class="legal-links">
+                <p class="privacy-policy" i18n="privacyPolicy">Privacy Policy</p>
+                <p class="terms-of-service" i18n="termsOfService">Terms of service</p>
+              </div>
+            </div>
+          </div>
         </section>
+      </footer>
+      
+      
 
-        <section class="intro-section">
-            <h1>Design it. Rock it.</h1>
-
-            <div class="container">
-                <div class="section">
-                    <img
-                        src="../public/assets/intro-section-img1.png"
-                        alt="Editable T-shirt Design"
-                    />
-                </div>
-                <div class="section">
-                    <h2>Bring your idea to life – effortlessly.</h2>
-                    <div class="content">
-                        <p>
-                            Designing your own T-shirt should feel as exciting
-                            as wearing it — and with our intuitive editor, it
-                            is. Upload your own illustrations, logos, or photos.
-                            Add custom text with dozens of fonts. Whether you're
-                            making a gift, building a brand, or just trying out
-                            an idea, our platform adapts to your level — no
-                            design background needed. And if you ever feel
-                            stuck, explore our library of templates and
-                            community designs to get inspired and remix
-                            something fresh.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="section">
-                    <h2>
-                        Support independent artists. Discover your next favorite
-                        tee.
-                    </h2>
-                    <div class="content">
-                        <p>
-                            Tired of mass-produced fashion? Our marketplace is a
-                            curated space filled with designs made by real
-                            people — not algorithms. Whether you're into retro
-                            vibes, anime, politics, streetwear, or abstract
-                            design, there's something for you. And because
-                            designs are added every day, there's always
-                            something new to discover. We don’t just print
-                            shirts, we bring ideas to life, one tee at a time.
-                        </p>
-                    </div>
-                </div>
-                <div class="section">
-                    <img
-                        src="../public/assets/intro-section-img2.png"
-                        alt="Final T-shirt Preview"
-                    />
-                </div>
-            </div>
-
-            <div class="intro-section__button-wrapper">
-                <button class="intro-section__button" aria-label="Start creating your design">START CREATING</button>
-            </div>
-        </section>
-
-        <section class="about-us-container">
-            <div class="sub-sections">
-                <div class="sub-section">
-                    <h2>Who are we?</h2>
-                    <p>
-                        A platform where creativity meets clothing. We help
-                        people design, sell, and wear unique T-shirts —
-                        effortlessly.
-                    </p>
-                    <p class="small-text">
-                        <a href="src/about.html" aria-label="Learn more about QURI">Learn more about us</a>
-                    </p>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="sub-section">
-                    <h2>How much does it cost?</h2>
-                    <p>
-                        It's free to get started.<br />
-                        We only earn when you do. Manufacturers get custom
-                        rates.
-                    </p>
-                    <p class="small-text">
-                        <a href="src/pricing.html" aria-label="Learn more about pricing and revenue model">Learn more about Pricing</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <section class="footer-container">
-                <section class="footer-container-info">
-                    <div class="sub-footer-container-home-community">
-                        <h1>Home Page</h1>
-                        <a href="src/about.html" aria-label="Visit our community page">Community</a>
-                    </div>
-                    <div class="sub-footer-container-company">
-                        <h1>Company</h1>
-                        <a href="src/about.html" aria-label="About QURI">About us</a>
-                    </div>
-                    <div class="sub-footer-container-pricing">
-                        <h1>Pricing</h1>
-                        <a href="src/pricing.html" aria-label="How pricing works">How it works</a>
-                    </div>
-                    <div class="sub-footer-container-social-media">
-                        <h1>Social Media</h1>
-                        <img
-                            src="../public/assets/footer-ig-icon.png"
-                            alt="Instagram"
-                            aria-label="Instagram"
-                        />
-                        <img
-                            src="../public/assets/footer-x-icon.png"
-                            alt="X (Twitter)"
-                            aria-label="Twitter"
-                        />
-                        <img
-                            src="../public/assets/footer-fb-icon.png"
-                            alt="Facebook"
-                            aria-label="Facebook"
-                        />
-                        <img
-                            src="../public/assets/footer-tiktok-icon.png"
-                            alt="TikTok"
-                            aria-label="TikTok"
-                        />
-                    </div>
-                </section>
-                <div class="sub-footer-container-legal">
-                    <div class="left-bottom-container-legal">
-                        <h1 class="left-bottom-container-legal-title">QURI</h1>
-                        <p>
-                            Your creative space is waiting.
-                            <a class="link-sign-in" href="src/login.html" aria-label="Sign in to your QURI account">Sign in</a> to
-                            get started
-                        </p>
-                    </div>
-                    <div class="right-bottom-container-legal">
-                        <p class="left-bottom-container-location">LIMA, PE</p>
-
-                        <div class="legal-links">
-                            <p class="privacy-policy">Privacy Policy</p>
-                            <p class="terms-of-service">Terms of service</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </footer>
-    </body>
+    <script src="src/js/i18n/en.js"></script>
+    <script src="src/js/i18n/es.js"></script>
+    <script src="src/js/i18n.js"></script>
+  </body>
 </html>
