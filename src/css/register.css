@@ -142,3 +142,8 @@
     background-repeat: no-repeat; /* No se repite */
     background-attachment: fixed; /* Opcional: efecto parallax */
   }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
