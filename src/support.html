@@ -22,54 +22,60 @@
   <body>
     <header class="header">
       <div class="header-container">
-          <div class="logo">
-              <a href="../index.html" aria-label="Go to homepage">
-                  <img
-                      src="../public/assets/header-quri-logo.png"
-                      alt="QURI Logo"
-                      class="logo-img"
-                  />
-              </a>
-          </div>
-          <nav class="nav">
-              <ul class="nav-list">
-                  <li><a href="support.html" aria-label="Support information">FAQ</a></li>
-                  <li><a href="about.html" aria-label="About QURI">About</a></li>
-                  <li><a href="pricing.html" aria-label="Pricing information">Pricing</a></li>
+        <div class="logo">
+          <a href="index.html" aria-label="Go to homepage">
+            <img
+              src="../public/assets/header-quri-logo.png"
+              alt="QURI Logo"
+              class="logo-img"
+              i18n-alt="logo"
+            />
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="src/support.html" i18n="faq">FAQ</a></li>
+            <li><a href="src/about.html" i18n="about">About</a></li>
+            <li><a href="src/pricing.html" i18n="pricing">Pricing</a></li>
+            <li class="mobile-auth">
+              <a href="register.html" class="join-text" i18n="join"><strong>Join</strong></a>
+            </li>
+            <li class="mobile-auth">
+              <a href="login.html" class="cta-button" i18n="login">Login</a>
+            </li>
+          </ul>
+        </nav>
 
-                      <!-- NUEVOS BOTONES SOLO VISIBLES EN MÓVIL -->
-                      <li class="mobile-auth">
-                        <a href="register.html" class="join-text"><strong>Join</strong></a>
-                      </li>
-                      <li class="mobile-auth">
-                        <a href="login.html" class="cta-button">Login</a>
-                      </li>
-              </ul>
-          </nav>
+        <div class="auth">
+            <div class="custom-dropdown" id="language-dropdown">
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select language" i18n="language-selector">
+                  🌐 EN
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><button class="dropdown-item lang-btn" data-lang="en" i18n="lang-en">EN</button></li>
+                  <li><button class="dropdown-item lang-btn" data-lang="es" i18n="lang-es">ES</button></li>
+                </ul>
+              </div>
+              
+          <a href="src/register.html" class="join-text" aria-label="Join QURI platform" i18n="join-text"><strong>JOIN</strong></a>
+          <a href="src/login.html" class="cta-button" aria-label="Login to QURI" i18n="login-text">LOGIN</a>
+        </div>
 
-          <div class="auth">
-              <a href="register.html" class="join-text" aria-label="Join QURI platform"
-                  ><strong>JOIN</strong></a
-              >
-              <a href="login.html" class="cta-button" aria-label="Login to QURI">LOGIN</a>
-          </div>
-
-          <button class="menu-toggle" aria-label="Open menu">
-              &#9776;
-          </button>
+        <button class="menu-toggle" aria-label="Open menu" i18n="menu-toggle">☰</button>
       </div>
-  </header>
+    </header>
 
-    <section class="faq-container" aria-labelledby="faq-heading">
+    <section class="faq-container" aria-labelledby="faq-heading" i18n="faq-section">
       <div class="faq-section">
-        <h2 id="faq-heading">Frequently Asked Questions</h2>
-
-        <div class="faq-item">
+        <h2 id="faq-heading" i18n="faq-heading">Frequently Asked Questions</h2>
+    
+        <div class="faq-item" i18n="faq1-item">
           <button
             class="faq-question"
             aria-expanded="false"
             aria-controls="faq1-answer"
             aria-label="Expand answer for: Do I need to pay to create designs?"
+            i18n="faq1-question-label"
           >
             <span class="dot" aria-hidden="true">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -77,7 +83,7 @@
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
-            <span class="question-text">Do I need to pay to create designs?</span>
+            <span class="question-text" i18n="faq1-question">Do I need to pay to create designs?</span>
             <span class="arrow" aria-hidden="true">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -92,17 +98,19 @@
             class="faq-answer"
             role="region"
             aria-hidden="true"
+            i18n="faq1-answer"
           >
-            <p>Nope. Creating and uploading designs is completely free. You only earn (and we only take a small cut) when a product sells.</p>
+            <p i18n="faq1-answer-text">Nope. Creating and uploading designs is completely free. You only earn (and we only take a small cut) when a product sells.</p>
           </div>
         </div>
-
-        <div class="faq-item">
+    
+        <div class="faq-item" i18n="faq2-item">
           <button
             class="faq-question"
             aria-expanded="false"
             aria-controls="faq2-answer"
             aria-label="Expand answer for: Can I customize T-shirts without uploading my own art?"
+            i18n="faq2-question-label"
           >
             <span class="dot" aria-hidden="true">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -110,7 +118,7 @@
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
-            <span class="question-text">Can I customize T-shirts without uploading my own art?</span>
+            <span class="question-text" i18n="faq2-question">Can I customize T-shirts without uploading my own art?</span>
             <span class="arrow" aria-hidden="true">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -125,17 +133,19 @@
             class="faq-answer"
             role="region"
             aria-hidden="true"
+            i18n="faq2-answer"
           >
-            <p>Yes! You can use our design tools, templates, and elements to create your tee without needing any external files.</p>
+            <p i18n="faq2-answer-text">Yes! You can use our design tools, templates, and elements to create your tee without needing any external files.</p>
           </div>
         </div>
-
-        <div class="faq-item">
+    
+        <div class="faq-item" i18n="faq3-item">
           <button
             class="faq-question"
             aria-expanded="false"
             aria-controls="faq3-answer"
             aria-label="Expand answer for: How do I sell my T-shirts?"
+            i18n="faq3-question-label"
           >
             <span class="dot" aria-hidden="true">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -143,7 +153,7 @@
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
-            <span class="question-text">How do I sell my T-shirts?</span>
+            <span class="question-text" i18n="faq3-question">How do I sell my T-shirts?</span>
             <span class="arrow" aria-hidden="true">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -158,17 +168,19 @@
             class="faq-answer"
             role="region"
             aria-hidden="true"
+            i18n="faq3-answer"
           >
-            <p>Just create an account, upload your design, set your price, and publish. We take care of printing, shipping, and customer support.</p>
+            <p i18n="faq3-answer-text">Just create an account, upload your design, set your price, and publish. We take care of printing, shipping, and customer support.</p>
           </div>
         </div>
-
-        <div class="faq-item">
+    
+        <div class="faq-item" i18n="faq4-item">
           <button
             class="faq-question"
             aria-expanded="false"
             aria-controls="faq4-answer"
             aria-label="Expand answer for: Can I remove or update a design after publishing it?"
+            i18n="faq4-question-label"
           >
             <span class="dot" aria-hidden="true">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -176,7 +188,7 @@
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
-            <span class="question-text">Can I remove or update a design after publishing it?</span>
+            <span class="question-text" i18n="faq4-question">Can I remove or update a design after publishing it?</span>
             <span class="arrow" aria-hidden="true">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -191,17 +203,19 @@
             class="faq-answer"
             role="region"
             aria-hidden="true"
+            i18n="faq4-answer"
           >
-            <p>Yes. You can edit, pause, or delete your designs anytime from your dashboard.</p>
+            <p i18n="faq4-answer-text">Yes. You can edit, pause, or delete your designs anytime from your dashboard.</p>
           </div>
         </div>
-
-        <div class="faq-item">
+    
+        <div class="faq-item" i18n="faq5-item">
           <button
             class="faq-question"
             aria-expanded="false"
             aria-controls="faq5-answer"
             aria-label="Expand answer for: Can I use the designs for other products?"
+            i18n="faq5-question-label"
           >
             <span class="dot" aria-hidden="true">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -209,7 +223,7 @@
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
-            <span class="question-text">Can I use the designs for other products?</span>
+            <span class="question-text" i18n="faq5-question">Can I use the designs for other products?</span>
             <span class="arrow" aria-hidden="true">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -224,17 +238,19 @@
             class="faq-answer"
             role="region"
             aria-hidden="true"
+            i18n="faq5-answer"
           >
-            <p>Right now we focus on T-shirts, but designs belong to their creators. If you're interested in other products or collaborations, feel free to reach out directly to the artist (if available).</p>
+            <p i18n="faq5-answer-text">Right now we focus on T-shirts, but designs belong to their creators. If you're interested in other products or collaborations, feel free to reach out directly to the artist (if available).</p>
           </div>
         </div>
-
-        <div class="faq-item">
+    
+        <div class="faq-item" i18n="faq6-item">
           <button
             class="faq-question"
             aria-expanded="false"
             aria-controls="faq6-answer"
             aria-label="Expand answer for: How often are new designs added?"
+            i18n="faq6-question-label"
           >
             <span class="dot" aria-hidden="true">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -242,7 +258,7 @@
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
-            <span class="question-text">How often are new designs added?</span>
+            <span class="question-text" i18n="faq6-question">How often are new designs added?</span>
             <span class="arrow" aria-hidden="true">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -257,17 +273,19 @@
             class="faq-answer"
             role="region"
             aria-hidden="true"
+            i18n="faq6-answer"
           >
-            <p>All the time. Designers from everywhere contribute regularly — so there’s always something new to discover.</p>
+            <p i18n="faq6-answer-text">All the time. Designers from everywhere contribute regularly — so there’s always something new to discover.</p>
           </div>
         </div>
-
-        <div class="faq-item">
+    
+        <div class="faq-item" i18n="faq7-item">
           <button
             class="faq-question"
             aria-expanded="false"
             aria-controls="faq7-answer"
             aria-label="Expand answer for: I'm a manufacturer. How do I partner with you?"
+            i18n="faq7-question-label"
           >
             <span class="dot" aria-hidden="true">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -275,7 +293,7 @@
                 <circle cx="7.5" cy="7.5" r="7.5" fill="#989898"/>
               </svg>
             </span>
-            <span class="question-text">I'm a manufacturer. How do I partner with you?</span>
+            <span class="question-text" i18n="faq7-question">I'm a manufacturer. How do I partner with you?</span>
             <span class="arrow" aria-hidden="true">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -290,34 +308,37 @@
             class="faq-answer"
             role="region"
             aria-hidden="true"
+            i18n="faq7-answer"
           >
-            <p>We’re always open to new partners. Reach out via our contact form or email us at <a href="mailto:businessinquiries@quri.com">businessinquiries@quri.com</a> to get started.</p>
+            <p i18n="faq7-answer-text">If you’re interested in working with us, please visit our partner section and fill out the inquiry form. We’re always open to expanding our network.</p>
           </div>
         </div>
-
+    
       </div>
     </section>
 
+
+
     <section class="contact-channels">
-      <h2>Not What You Were Looking For?</h2>
-      <p>Our channels</p>
-    
+      <h2 i18n="contact-heading">Not What You Were Looking For?</h2>
+      <p i18n="contact-subtitle">Our channels</p>
+
       <div class="contact-boxes">
         <div class="contact-box">
-          <h3>Email</h3>
-          <p>Got something on your mind? Send us an email anytime. Whether it's a bug, a business idea, or just a suggestion, we read every message.</p>
+          <h3 i18n="contact-email-heading">Email</h3>
+          <p i18n="contact-email-text">Got something on your mind? Send us an email anytime. Whether it's a bug, a business idea, or just a suggestion, we read every message.</p>
           <a href="mailto:inquiries@quri.com">inquiries@quri.com</a>
         </div>
-    
+
         <div class="contact-box">
-          <h3>Call us</h3>
-          <p>Prefer to talk it out? Give us a call during our business hours. We’re based in Lima, Peru — local time GMT-5.</p>
+          <h3 i18n="contact-call-heading">Call us</h3>
+          <p i18n="contact-call-text">Prefer to talk it out? Give us a call during our business hours. We’re based in Lima, Peru — local time GMT-5.</p>
           <a href="tel:+51968457310">+51 968 457 310</a>
         </div>
-    
+
         <div class="contact-box">
-          <h3>DM us on Instagram</h3>
-          <p>Slide into our DMs anytime. Our social team is active daily and can help answer questions, highlight your work, or connect you to the right part of our team.</p>
+          <h3 i18n="contact-dm-heading">DM us on Instagram</h3>
+          <p i18n="contact-dm-text">Slide into our DMs anytime. Our social team is active daily and can help answer questions, highlight your work, or connect you to the right part of our team.</p>
           <a href="https://www.instagram.com/quri.pe" target="_blank">@quri.pe</a>
         </div>
       </div>
@@ -326,62 +347,50 @@
 
     <footer class="footer">
       <section class="footer-container">
-          <section class="footer-container-info">
-              <div class="sub-footer-container-home-community">
-                  <h1>Home Page</h1>
-                  <a href="src/about.html" aria-label="Visit our community page">Community</a>
-              </div>
-              <div class="sub-footer-container-company">
-                  <h1>Company</h1>
-                  <a href="src/about.html" aria-label="About QURI">About us</a>
-              </div>
-              <div class="sub-footer-container-pricing">
-                  <h1>Pricing</h1>
-                  <a href="src/pricing.html" aria-label="How pricing works">How it works</a>
-              </div>
-              <div class="sub-footer-container-social-media">
-                  <h1>Social Media</h1>
-                  <img
-                      src="../public/assets/footer-ig-icon.png"
-                      alt="Instagram"
-                      aria-label="Instagram"
-                  />
-                  <img
-                      src="../public/assets/footer-x-icon.png"
-                      alt="X (Twitter)"
-                      aria-label="Twitter"
-                  />
-                  <img
-                      src="../public/assets/footer-fb-icon.png"
-                      alt="Facebook"
-                      aria-label="Facebook"
-                  />
-                  <img
-                      src="../public/assets/footer-tiktok-icon.png"
-                      alt="TikTok"
-                      aria-label="TikTok"
-                  />
-              </div>
-          </section>
-          <div class="sub-footer-container-legal">
-              <div class="left-bottom-container-legal">
-                  <h1 class="left-bottom-container-legal-title">QURI</h1>
-                  <p>
-                      Your creative space is waiting.
-                      <a class="link-sign-in" href="src/login.html" aria-label="Sign in to your QURI account">Sign in</a> to
-                      get started
-                  </p>
-              </div>
-              <div class="right-bottom-container-legal">
-                  <p class="left-bottom-container-location">LIMA, PE</p>
-
-                  <div class="legal-links">
-                      <p class="privacy-policy">Privacy Policy</p>
-                      <p class="terms-of-service">Terms of service</p>
-                  </div>
-              </div>
+        <section class="footer-container-info">
+          <div class="sub-footer-container-home-community">
+            <h1 i18n="home">Home Page</h1>
+            <a href="src/about.html" aria-label="Visit our community page" i18n="community">Community</a>
           </div>
+          <div class="sub-footer-container-company">
+            <h1 i18n="company">Company</h1>
+            <a href="src/about.html" aria-label="About QURI" i18n="about_us">About us</a>
+          </div>
+          <div class="sub-footer-container-pricing">
+            <h1 i18n="pricing">Pricing</h1>
+            <a href="src/pricing.html" aria-label="How pricing works" i18n="how_it_works">How it works</a>
+          </div>
+          <div class="sub-footer-container-social-media">
+            <h1 i18n="socialMedia">Social Media</h1>
+            <img src="../public/assets/footer-ig-icon.png" alt="Instagram" aria-label="Instagram" i18n-alt />
+            <img src="../public/assets/footer-x-icon.png" alt="X (Twitter)" aria-label="Twitter" i18n-alt />
+            <img src="../public/assets/footer-fb-icon.png" alt="Facebook" aria-label="Facebook" i18n-alt />
+            <img src="../public/assets/footer-tiktok-icon.png" alt="TikTok" aria-label="TikTok" i18n-alt />
+          </div>
+        </section>
+        <div class="sub-footer-container-legal">
+          <div class="left-bottom-container-legal">
+            <h1 class="left-bottom-container-legal-title" i18n="quri">QURI</h1>
+            <p i18n="aboutUsText">
+              Your creative space is waiting.
+              <a class="link-sign-in" href="src/login.html" aria-label="Sign in to your QURI account" i18n="sign_in">Sign in</a>
+              to get started
+            </p>
+          </div>
+          <div class="right-bottom-container-legal">
+            <p class="left-bottom-container-location" i18n="location">LIMA, PE</p>
+    
+            <div class="legal-links">
+              <p class="privacy-policy" i18n="privacyPolicy">Privacy Policy</p>
+              <p class="terms-of-service" i18n="termsOfService">Terms of service</p>
+            </div>
+          </div>
+        </div>
       </section>
-  </footer>
+    </footer>
+
+    <script src="js/i18n/support/en.js"></script>
+    <script src="js/i18n/support/es.js"></script>
+    <script src="js/i18n.js"></script>
   </body>
 </html>
