@@ -31,6 +31,17 @@
                 <li><a href="about.html" aria-label="About QURI" i18n="about-link">About</a></li>
                 <li><a href="pricing.html" aria-label="Pricing information" i18n="pricing-link">Pricing</a></li>
                 <li class="mobile-auth">
+                    <div class="custom-dropdown" id="language-dropdown">
+                      <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select language" i18n="language-selector">
+                        🌐 EN
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><button class="dropdown-item lang-btn" data-lang="en" i18n="lang-en">EN</button></li>
+                        <li><button class="dropdown-item lang-btn" data-lang="es" i18n="lang-es">ES</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                <li class="mobile-auth">
                     <a href="register.html" class="join-text" i18n="join-link"><strong>Join</strong></a>
                 </li>
                 <li class="mobile-auth">
@@ -53,7 +64,7 @@
             <a href="login.html" class="cta-button" aria-label="Login to QURI" i18n="login-button">LOGIN</a>
         </div>
 
-        <button class="menu-toggle" aria-label="Open menu" i18n="menu-toggle">☰</button>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
     </div>
 </header>
 
