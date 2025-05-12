@@ -1,0 +1,15 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    width: 100%; 
+  }
+  
