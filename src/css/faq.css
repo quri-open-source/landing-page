@@ -1,4 +1,5 @@
 
+
 main {
     max-width: 1280px;
     width: 100%;
@@ -28,3 +29,54 @@ main {
     
 }
 
+.contact {
+    padding-top: 5rem;
+    text-align: center;
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.contact-methods { 
+    display: flex;
+    gap: 1rem;
+    padding: 2.5rem 1rem;
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        border-radius: 12px;
+        gap: 1rem;
+        max-width: 250px;
+        p {
+            flex: 1;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    
+}
+
+
+
+.separator {
+    border-bottom: 1px solid #d8d9da;
+}
