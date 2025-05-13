@@ -2,65 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="src/css/home.css" />
-    <link rel="stylesheet" href="src/css/carousel.css" />
-    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
     <title>Quri</title>
-
-    <meta name="title" content="Quri – Design and Customize Your Own T-Shirts">
-    <meta name="description" content="Quri is a creative platform where anyone can design, personalize, and sell custom t-shirts. No design skills needed. Start your t-shirt business now.">
-    <meta name="keywords" content="custom t-shirts, t-shirt design, t-shirt editor, personalized shirts, print-on-demand, t-shirt business">
+    
+    <meta name="title" content="About Quri – A Creative T-Shirt Design Platform">
+    <meta name="description" content="Learn about Quri's mission to empower creativity through custom-designed T-shirts. Discover our story, values, and how we help creators turn ideas into apparel.">
+    <meta name="keywords" content="About Quri, t-shirt design platform, custom clothing, creative apparel, creator community">
     <meta name="author" content="Quri Team">
     <meta name="robots" content="index, follow">
     <meta name="language" content="en">
     <meta name="theme-color" content="#ffffff">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Quri – Design and Customize Your Own T-Shirts">
-    <meta property="og:description" content="Create, customize, and sell t-shirts with Quri’s easy-to-use editor. Support real artists or launch your own brand today.">
-    <meta property="og:image" content="/public/assets/hero-1.png">
+    <meta property="og:title" content="About Quri – A Creative T-Shirt Design Platform">
+    <meta property="og:description" content="We help people bring their ideas to life through easy-to-make, meaningful custom t-shirts. Learn about our journey and what we offer.">
+    <meta property="og:image" content="/public/assets/our-story.png">
     <meta property="og:site_name" content="Quri">
     <meta property="og:see_also" content="https://www.instagram.com/">
     <meta property="og:see_also" content="https://www.tiktok.com/">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Quri – Design and Customize Your Own T-Shirts">
-    <meta name="twitter:description" content="Design your own t-shirts online with Quri. No experience needed – just upload, customize, and wear your creations.">
-    <meta name="twitter:image" content="/public/assets/hero-1.png">
+    <meta name="twitter:title" content="About Quri – A Creative T-Shirt Design Platform">
+    <meta name="twitter:description" content="Discover Quri’s story and mission to make personal expression easy through customizable apparel.">
+    <meta name="twitter:image" content="/public/assets/our-story.png">
     
+</head>
+
 <body>
     <header>
         <section class="container">
             <div>
-                <a href="index.html">
+                <a href="../index.html">
                     <h1>Quri</h1>
                 </a>
             </div>
-          
 
-            <nav class="nav" id="header-nav" aria-label="Main navigation">
+
+            <nav class="nav" id="header-nav" aria-label="Main Navigation">
                 <div class="header-nav-mobile">
-                    <a href="index.html">
+                    <a href="../index.html">
                         <h1>Quri</h1>
                     </a>
                 </div>
                 <ul>
                     <li>
-                        <a href="./src/about.html" i18n="header.nav.about">About</a>
+                        <a href="about.html" i18n="header.nav.about">About</a>
                     </li>
                     <li>
-                        <a href="./src/faq.html" i18n="header.nav.faq">FAQ</a>
+                        <a href="faq.html" i18n="header.nav.faq">FAQ</a>
                     </li>
                     <li>
-                        <a href="./src/team.html" i18n="header.nav.team">Team</a>
+                        <a href="team.html" i18n="header.nav.team">Team</a>
                     </li>
                 </ul>
                 <div class="header-nav-mobile">
@@ -74,7 +75,7 @@
             </nav>
 
             <div class="user-buttons">
-                <button class="header-button" id="language-button" aria-label="Change language">
+                <button class="header-button" id="language-button">
                     ES
                 </button>
 
@@ -90,100 +91,96 @@
     </header>
 
     <main>
-        <section class="hero-section">
-            <article>
-                <h2 i18n="home.title">
-                    Design Your Custom T-Shirt in Minutes
+
+        <section class="hero" role="region" aria-label="hero title and description">
+
+            <img src="/public/assets/quri-logo.png" alt="Quri logo">
+
+            <div>
+                <h2 i18n="hero.title">
+                    Who are we?
                 </h2>
-                <p i18n="home.description">
-                    No design skills needed — just choose, customize, and
-                    create your own t-shirt with our intuitive editor.
+                <p i18n="hero.description">
+                    We&apos;re a creative platform based in Lima, Peru, built for people who believe style should be
+                    personal, expressive, and accessible.Our mission is to give anyone the power to design, wear, and
+                    sell T-shirts that mean something — whether its a message, a piece of art, or a brand in the making.
                 </p>
-                <a href="#" class="button" i18n="home.callToAction">Start Designing Now</a>
-            </article>
+            </div>
 
-            <section class="carousel-container">
-                <div class="carousel" role="region" aria-label="Product Design Gallery">
-                    <img src="/public/assets/hero-1.png" alt="Custom t-shirt design" />
-                    <img src="/public/assets/hero-2.png" alt="Custom t-shirt design" />
-                    <img src="/public/assets/hero-3.png" alt="Custom t-shirt design" />
-                    <img src="/public/assets/hero-4.png" alt="Custom t-shirt design" />
-                    <img src="/public/assets/hero-5.png" alt="Custom t-shirt design" />
+        </section>
+
+        <section class="history">
+
+            <section>
+                <img src="/public/assets/our-story.png" alt="Our team working on a design">
+
+                <div>
+                    <h2 i18n="history.1.title">
+                        Our Story
+                    </h2>
+
+                    <p i18n="history.1.description">
+                        We started with a simple question:
+                        <br>
+                        <br>
+                        Why is it so hard to turn a cool idea into a T-shirt you can actually wear or sell?
+                        <br>
+                        <br>
+                        We were tired of seeing so many great ideas go to waste. From late-night sketches to streetwear
+                        trends, we saw how many great ideas were stuck in notebooks or Instagram drafts. So we built a
+                        platform that makes it ridiculously easy to bring those ideas to life — no technical skills, no
+                        upfront costs, no hassle
+                    </p>
                 </div>
+            </section>
 
-                <div class="carousel-controls">
-                    <ul>
-                        <li><button class="carousel-control"></button></li>
-                        <li><button class="carousel-control"></button></li>
-                        <li><button class="carousel-control"></button></li>
-                        <li><button class="carousel-control"></button></li>
-                        <li><button class="carousel-control"></button></li>
-                    </ul>
+            <section>
+                <img src="/public/assets/what-we-offer.png" alt="Several T-shirts with different designs">
+
+                <div>
+                    <h2 i18n="history.2.title">
+                        What We Offer
+                    </h2>
+
+                    <p i18n="history.2.description">
+                        No more learning complex software. Our design editor is intuitive, fast, and fun — so you can
+                        bring your vision to life in minutes.
+                        <br>
+                        <br>
+                        Browse and shop one-of-a-kind designs from creators around the world. Every purchase supports
+                        the artist behind the work.
+                        <br>
+                        <br>
+                        Upload your art, set your price, and build your brand. We handle the rest — from printing to
+                        shipping to support.
+                    </p>
                 </div>
             </section>
         </section>
 
-        <section class="design-it">
-            <h2 i18n="designIt.title">Design it. Rock it.</h2>
-        </section>
-
-        <section class="features" aria-labelledby="features-heading">
-            <div class="features-container">
-                <section class="card-vertical">
-                    <img src="/public/assets/features-1.png" alt="Applying a bull as an image to your t-shirt">
-                    <div>
-                        <h3 i18n="features.1.title">Design your way</h3>
-                        <p i18n="features.1.description">Design your own T-shirt with ease. Upload images, add text, and
-                            customize everything — or start with a template. No design skills required.</p>
-                    </div>
+        <section class="questions">
+            <div class="questions-container">
+                <section>
+                    <h3 i18n="questions.1.title">Got Something to Share? Let&apos;s Talk</h3>
+                    <p i18n="questions.1.description">Questions? Ideas? Feedback?</p>
+                    <a href="./team.html" i18n="questions.1.link">Contact Us</a>
                 </section>
+                <section>
+                    <h3 i18n="questions.2.title">How much does it cost?</h3>
+                    <p i18n="questions.2.description">It&apos;s free to get started. We only earn when you do. Manufacturers get custom rates.</p>
+                    <a href="./faq.html" i18n="questions.2.link">Learn Pricing</a>
+                </section>
+            </div>
 
-                <div class="card-vertical-container">
-
-                    <section class="card-horizontal">
-                        <img src="/public/assets/features-2.png" alt="">
-                        <div>
-                            <h3 i18n="features.2.title">Support real artists</h3>
-                            <p i18n="features.2.description">Explore a marketplace full of unique, ever-growing t-shirt
-                                designs. From retro and anime to politics and abstract art — every tee tells a story,
-                                and new ones drop daily.</p>
-                        </div>
-                    </section>
-
-
-                    <section class="card-horizontal">
-                        <img src="/public/assets/features-3.png" alt="">
-                        <div>
-                            <h3 i18n="features.3.title">Make It Yours</h3>
-                            <p i18n="features.3.description">Create personalized T-shirts effortlessly. Add your own
-                                images, text, and styles — or use a ready-made design. No experience needed.</p>
-                        </div>
-                    </section>
-
-                </div>
-
+            <div class="questions-main">
+                <h2 i18n="questions.3.title">Why It Matters</h2>
+                <p i18n="questions.3.description">
+                    We&apos;re not just about T-shirts. We&apos;re about people owning their creativity, connecting
+                    through design, and making style more personal — and more human.
+                </p>
             </div>
         </section>
 
-        <section class="about">
-            <a href="#" i18n="about.buttonLink" class="button start-creating">Start Creating</a>
-
-            <section>
-                <div>
-                    <h3 i18n="about.whoarewe.title">Who are we?</h3>
-                    <p i18n="about.whoarewe.description">A platform where creativity meets clothing. We help people
-                        design, sell, and wear unique T-shirts — effortlessly.</p>
-                    <a href="#" i18n="about.whoarewe.buttonLink">Learn More</a>
-                </div>
-
-                <div>
-                    <h3 i18n="about.howmuch.title">How much does it cost?</h3>
-                    <p i18n="about.howmuch.description">It&apos;s free to get started. We only earn when you do.
-                        Manufacturers get custom rates.</p>
-                    <a href="#" i18n="about.howmuch.buttonLink">Learn More</a>
-                </div>
-            </section>
-        </section>
     </main>
 
     <footer aria-labelledby="footer-heading">
@@ -230,7 +227,7 @@
                                         d="m25 23 .8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z" />
                                 </svg>
                             </a>
-                            <a href="" aria-label="Twitter">
+                            <a href=""aria-label="Twitter"></a>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1200 1227">
                                     <path fill="#fff"
@@ -245,7 +242,7 @@
                                         d="M128 23.064c34.177 0 38.225.13 51.722.745 12.48.57 19.258 2.655 23.769 4.408 5.974 2.322 10.238 5.096 14.717 9.575 4.48 4.479 7.253 8.743 9.575 14.717 1.753 4.511 3.838 11.289 4.408 23.768.615 13.498.745 17.546.745 51.723 0 34.178-.13 38.226-.745 51.723-.57 12.48-2.655 19.257-4.408 23.768-2.322 5.974-5.096 10.239-9.575 14.718-4.479 4.479-8.743 7.253-14.717 9.574-4.511 1.753-11.289 3.839-23.769 4.408-13.495.616-17.543.746-51.722.746-34.18 0-38.228-.13-51.723-.746-12.48-.57-19.257-2.655-23.768-4.408-5.974-2.321-10.239-5.095-14.718-9.574-4.479-4.48-7.253-8.744-9.574-14.718-1.753-4.51-3.839-11.288-4.408-23.768-.616-13.497-.746-17.545-.746-51.723 0-34.177.13-38.225.746-51.722.57-12.48 2.655-19.258 4.408-23.769 2.321-5.974 5.095-10.238 9.574-14.717 4.48-4.48 8.744-7.253 14.718-9.575 4.51-1.753 11.288-3.838 23.768-4.408 13.497-.615 17.545-.745 51.723-.745M128 0C93.237 0 88.878.147 75.226.77c-13.625.622-22.93 2.786-31.071 5.95-8.418 3.271-15.556 7.648-22.672 14.764C14.367 28.6 9.991 35.738 6.72 44.155 3.555 52.297 1.392 61.602.77 75.226.147 88.878 0 93.237 0 128c0 34.763.147 39.122.77 52.774.622 13.625 2.785 22.93 5.95 31.071 3.27 8.417 7.647 15.556 14.763 22.672 7.116 7.116 14.254 11.492 22.672 14.763 8.142 3.165 17.446 5.328 31.07 5.95 13.653.623 18.012.77 52.775.77s39.122-.147 52.774-.77c13.624-.622 22.929-2.785 31.07-5.95 8.418-3.27 15.556-7.647 22.672-14.763 7.116-7.116 11.493-14.254 14.764-22.672 3.164-8.142 5.328-17.446 5.95-31.07.623-13.653.77-18.012.77-52.775s-.147-39.122-.77-52.774c-.622-13.624-2.786-22.929-5.95-31.07-3.271-8.418-7.648-15.556-14.764-22.672C227.4 14.368 220.262 9.99 211.845 6.72c-8.142-3.164-17.447-5.328-31.071-5.95C167.122.147 162.763 0 128 0Zm0 62.27C91.698 62.27 62.27 91.7 62.27 128c0 36.302 29.428 65.73 65.73 65.73 36.301 0 65.73-29.428 65.73-65.73 0-36.301-29.429-65.73-65.73-65.73Zm0 108.397c-23.564 0-42.667-19.103-42.667-42.667S104.436 85.333 128 85.333s42.667 19.103 42.667 42.667-19.103 42.667-42.667 42.667Zm83.686-110.994c0 8.484-6.876 15.36-15.36 15.36-8.483 0-15.36-6.876-15.36-15.36 0-8.483 6.877-15.36 15.36-15.36 8.484 0 15.36 6.877 15.36 15.36Z" />
                                 </svg>
                             </a>
-                            <a href="" aria-label="TikTok">
+                            <a href="" arial-label="TikTok">
                                 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"
                                     viewBox="0 0 256 290">
                                     <path fill="#FF004F"
@@ -280,11 +277,11 @@
 
     </footer>
 
-    <script src="src/i18n/index/en.js"></script>
-    <script src="src/i18n/index/es.js"></script>
-    <script src="src/js/carousel.js"></script>
-    <script src="src/js/i18n.js"></script>
-    <script src="src/js/index.js"></script>
+
+    <script src="i18n/about/en.js"></script>
+    <script src="i18n/about/es.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
