@@ -60,5 +60,13 @@ const en = {
             description:
                 "I’m Renzo Luque, a Software Engineering student at UPC, and I’m 20 years old. I’m currently halfway through the program. I’m interested in learning more about cybersecurity.",
         },
+        JuanCarlos: {
+            title: "Juan Carlos Alvarado",
+            description: "I am Juan Carlos Alvarado, a Software Engineering student at UPC. I am passionate about technology, teamwork, and continuous learning. I enjoy solving problems and contributing to innovative projects."
+        },
+        Hallzyx: {
+            title: "Hallzyx",
+            description: "I am Hallzyx, a Software Engineering student at UPC. I am enthusiastic about coding, learning new technologies, and collaborating on creative projects. I strive to grow as a developer and contribute to meaningful solutions."
+        },
     },
 };

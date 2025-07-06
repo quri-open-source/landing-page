@@ -66,5 +66,13 @@ const es = {
             description:
                 "Soy Renzo Luque, estudiante de Ingeniería de Software en la UPC y tengo 20 años. Actualmente cursando la mitad de la carrera. Me gustaría aprender más sobre ciberseguridad.",
         },
+        JuanCarlos: {
+            title: "Juan Carlos Alvarado",
+            description: "Soy Juan Carlos Alvarado, estudiante de Ingeniería de Software en la UPC. Me apasiona la tecnología, el trabajo en equipo y el aprendizaje continuo. Disfruto resolver problemas y contribuir a proyectos innovadores."
+        },
+        Hallzyx: {
+            title: "Hallzyx",
+            description: "Soy Hallzyx, estudiante de Ingeniería de Software en la UPC. Me entusiasma programar, aprender nuevas tecnologías y colaborar en proyectos creativos. Busco crecer como desarrollador y aportar a soluciones significativas."
+        },
     },
 };
